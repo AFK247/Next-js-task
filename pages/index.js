@@ -20,34 +20,34 @@ export default function Home() {
 
   }
   return (
-    <>
-      <div className={styles.demo}>
+    <div>
+      <div className="bg-primary">
         <h5 className="text-center text-white p-2">DEMO ONLINE TEST</h5>
       </div>
 
-      <section className="row container">
-        <div className="col-11">
-          <div className="d-flex gap-2">
+      <section className="row">
+        <div className="col-lg-10 col-8">
+          <div className="d-flex flex-wrap gap-1">
             <button
               style={{ backgroundColor: "rgb(1, 1, 172)" }}
-              className="rounded-1 ms-2 px-5 text-white border-0"
+              className="rounded-1 ms-2 px-4 px-md-5 text-white border-0"
             >
               All Sections
             </button>
-            <button className="px-5 text-white bg-primary border-0 rounded-1">
+            <button className="px-4 ms-2  px-md-5 text-white bg-primary border-0 rounded-1">
               PHYSICS
             </button>
-            <button className="px-5 text-white bg-primary border-0 rounded-1">
+            <button className="px-4 ms-2 px-md-5 text-white bg-primary border-0 rounded-1">
               CHEMISTRY
             </button>
-            <button className="px-5 text-white bg-primary border-0 rounded-1">
+            <button className="px-4 ms-2 px-md-5 text-white bg-primary border-0 rounded-1">
               MATH
             </button>
           </div>
 
-          <hr className="col-12 mx-2 mt-2 mb-1"></hr>
+          <hr className="mx-2 mt-2 mb-1"></hr>
 
-          <div style={{ height: "545px" }} className="m-2 border border-3">
+          <div className="m-2 border border-3">
             <div className="d-flex bg-primary justify-content-between px-2 pt-1">
               <h6 className="text-center text-white ">Q No.: 1</h6>
               <div className="d-flex">
@@ -61,108 +61,93 @@ export default function Home() {
 
             <Content></Content>
           </div>
-          <div className="d-flex gap-2 my-3">
+          <div className="d-flex flex-wrap gap-1 my-3">
             <button className="rounded-1 ms-2 px-4 bg-primary text-white border-0">
               CLEAR RESPONSE
             </button>
-            <button onClick={clickHandeler} className="px-4 text-white bg-primary border-0 rounded-1">
+            <button onClick={clickHandeler} className="px-4 ms-2 text-white bg-primary border-0 rounded-1">
               REVIEW
             </button>
-            <button onClick={clickHandeler} className="px-4 text-white bg-primary border-0 rounded-1">
+            <button onClick={clickHandeler} className="px-4 ms-2 text-white bg-primary border-0 rounded-1">
               DUMP
             </button>
-            <button className="px-4 text-white bg-primary border-0 rounded-1">
+            <button className="px-4 ms-2 text-white bg-primary border-0 rounded-1">
               PREVIOUS
             </button>
             <button onClick={clickHandeler}
               style={{ backgroundColor: "rgb(1, 1, 172)" }}
-              className="px-4 text-white  border-0 rounded-1"
+              className="px-4 text-white ms-2 border-0 rounded-1"
             >
               NEXT
             </button>
           </div>
         </div>
 
-        <div className="col-1">
+        <div className="col-lg-2 col-4">
           <div className={styles.div1}>
+            <div className="d-flex flex-column flex-sm-row">
             <Image
-              className="ms-2 mt-1"
+              className="ms-1 my-1"
               src="/person.png"
-              height={120}
-              width={110}
+              height={100}
+              width={85}
             ></Image>
             <div>
-              <div className="d-flex">
-                <p className="mt-3 ms-4">
-                  Time <br></br>Left:
+                <p className="mt-2 ms-1">
+                  Time Left:<br></br>
+                  02:39:29
                 </p>
-                <p className="mt-4 ms-4">02:39:29</p>
-              </div>
-              <p className="ms-4 fst-italic">Ashish Kumar</p>
+              <p className="ms-1 fst-italic">Ashish Kumar</p>
+            </div>
             </div>
           </div>
-          <div className={styles.div2}>
-            <div style={{height:"30px"}} className="text-white bg-primary rounded-top"><p className="ms-2">Question Pallete</p></div>
-          <div class="btn-group " role="group" aria-label="Basic example">
-            <button style={{marginLeft:"1px",padding:"0px 26px",backgroundColor:"green"}} type="button" class="btn rounded-0 text-dark fw-bold">1</button>
-            <button style={{marginLeft:"1px",padding:"0px 26px",backgroundColor:val}} type="button" class="btn  rounded-0 text-dark fw-bold">2</button>
-            <button style={{marginLeft:"1px",padding:"0px 26px",backgroundColor:"green"}} type="button" class="btn rounded-0 text-dark fw-bold">3</button>
-            <button style={{marginLeft:"1px",padding:"0px 26px",backgroundColor:"green"}} type="button" class="btn rounded-0 text-dark fw-bold">4</button>
-            <button style={{marginLeft:"1px",padding:"0px 27px",backgroundColor:"red"}} type="button" class="btn btn-danger rounded-0 text-dark fw-bold">5</button>
-          </div>
 
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button style={{marginLeft:"1px",padding:"0px 26px",backgroundColor:"yellow"}} type="button" class="btn rounded-0 text-dark fw-bold">6</button>
-            <button style={{marginLeft:"1px",padding:"0px 26px"}} type="button" class="btn btn-success rounded-0 text-dark fw-bold">7</button>
-            <button style={{marginLeft:"1px",padding:"0px 26px"}} type="button" class="btn btn-light rounded-0 text-dark fw-bold">8</button>
-            <button style={{marginLeft:"1px",padding:"0px 26px",backgroundColor:"rgb(168, 90, 240)"}} type="button" class="btn rounded-0 text-dark fw-bold">9</button>
-            <button style={{marginLeft:"1px",padding:"0px 23px",backgroundColor:"rgb(199, 198, 198)"}} type="button" class="btn rounded-0 text-dark fw-bold">10</button>
+          <div className={styles.div2}>
+            <div style={{height:"30px",width:"100%"}} className="text-white bg-primary rounded-top text-center"><p className="ms-2">Question Pallete</p></div>
+          <div className="d-flex flex-wrap gap-1 mx-auto">
+          <button style={{backgroundColor:"green"}} type="button" class="btn rounded-0 px-3 text-dark fw-bold py-0">1</button>
+          <button style={{backgroundColor:val}} type="button" class="btn rounded-0 px-3 text-dark fw-bold py-0">2</button>
+          <button style={{backgroundColor:"green"}} type="button" class="btn rounded-0 px-3 text-dark fw-bold py-0">3</button>
+          <button style={{backgroundColor:"green"}} type="button" class="btn rounded-0 px-3 text-dark fw-bold py-0">4</button>
+          <button style={{backgroundColor:"red"}} type="button" class="btn  rounded-0 px-3 text-dark fw-bold py-0">5</button>
+          <button style={{marginLeft:"1px",padding:"0px 26px",backgroundColor:"yellow"}} type="button" class="btn btn-info rounded-0 px-3 text-dark fw-bold py-0">6</button>
+          <button  type="button" class="btn btn-success rounded-0 px-3 text-dark fw-bold py-0">7</button>
+          <button  type="button" class="btn btn-light rounded-0 px-3 text-dark fw-bold py-0">8</button>
+          <button style={{backgroundColor:"rgb(168, 90, 240)"}} type="button" class="btn rounded-0 px-3 text-dark fw-bold py-0">9</button>
+          <button style={{backgroundColor:"rgb(199, 198, 198)"}} type="button" class="btn rounded-0 px-2 text-dark fw-bold py-0">10</button>
+          
           </div>
 
           </div>
           <div className={styles.div3}>
           <div style={{height:"30px"}} className="text-white bg-primary rounded-top"><p className="ms-2">Legend (Click to View)</p></div>
-          <div class="btn-group " role="group" aria-label="Basic example">
-            <button style={{marginLeft:"1px",padding:"0px 92px 0px 3px"}} type="button" class="btn btn-success rounded-0 text-dark ">4 Answer</button>
-            <button style={{marginLeft:"1px",padding:"0px 64px 0px 3px"}} type="button" class="btn btn-danger rounded-0 text-dark ">2 No Answer</button>
-            
+          <div className="d-flex flex-wrap">
+            <button style={{width:"50%"}} type="button" class="btn btn-success rounded-0 text-dark px-0 py-0">4 Answer</button>
+            <button style={{width:"50%"}} type="button" class="btn btn-danger rounded-0 text-dark px-0 py-0">2 No Answer</button>
+            <button style={{width:"50%",backgroundColor:"rgb(168, 90, 240)"}} type="button" class="btn rounded-0 px-0 text-dark py-0">1 Review+Ans</button>
+            <button style={{width:"50%"}} type="button" class="btn btn-warning rounded-0 text-dark px-0 py-0">1 Review-Ans</button>
+            <button style={{width:"50%",backgroundColor:"rgb(199, 198, 198)"}} type="button" class="btn rounded-0 text-dark px-0 py-0">1 Dump</button>
+            <button style={{width:"50%"}} type="button" class="btn btn-light rounded-0 text-dark px-0 py-0">1 No Visit</button>
           </div>
-          <br></br>
 
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button style={{marginLeft:"1px",padding:"0px 58px 0px 3px",backgroundColor:"rgb(168, 90, 240)"}} type="button" class="btn rounded-0 text-dark ">1 Review+Ans</button>
-            <button style={{marginLeft:"1px",padding:"0px 59px 0px 3px"}} type="button" class="btn btn-warning rounded-0 text-dark ">1 Review-Ans</button>
-            
+          <div py-0>
+            <p style={{width:"100%"}}  class="rounded-0 text-dark bg-primary text-center">10 All Questions</p>
           </div>
-          <br></br>
 
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button style={{marginLeft:"1px",padding:"0px 100px 0px 3px",backgroundColor:"rgb(199, 198, 198)"}} type="button" class="btn rounded-0 text-dark ">1 Dump</button>
-            <button style={{marginLeft:"1px",padding:"0px 86px 0px 3px"}} type="button" class="btn btn-light rounded-0 text-dark ">1 No Visit</button>
-            
-          </div>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <p style={{marginLeft:"1px",padding:"0px 103px 0px 102px"}}  class="rounded-0 text-dark bg-primary text-center">10 All Questions</p>
-            
-          </div>
-          <hr className="my-0 text-white "></hr>
-          <div class="btn-group mt-3" role="group" aria-label="Basic example">
-            <button style={{marginLeft:"8px",padding:"0px 60px 0px 50px"}} type="button" class="btn btn-primary rounded-2 text-white ">Profile</button>
-            <button style={{marginLeft:"20px",padding:"0px 60px 0px 40px"}} type="button" class="btn btn-primary rounded-2 text-white ">Instr</button>
-            
-          </div>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button style={{marginLeft:"8px",padding:"0px 42px 0px 42px"}} type="button" class="btn btn-primary rounded-2 text-white mt-1">Questions</button>
-            <button style={{marginLeft:"20px",padding:"0px 50px 0px 32px"}} type="button" class="btn btn-primary rounded-2 text-white mt-1">Submit</button>
+          <div className="d-flex flex-wrap gap-1">
+            <button style={{width:"48%"}} type="button" class="btn btn-primary rounded-2  text-white">Profile</button>
+            <button style={{width:"48%"}} type="button" class="btn btn-primary rounded-2  text-white">Instr</button>
+            <button style={{width:"48%"}} type="button" class="btn btn-primary rounded-2  text-white">Questions</button>
+            <button style={{width:"48%"}} type="button" class="btn btn-primary rounded-2  text-white">Submit</button>
             
           </div>
           </div>
         </div>
       </section>
 
-      <div className={styles.footer}>
-        <p className="">© Addmen</p>
+      <div >
+        <p className="bg-secondary text-center p-2">© Addmen</p>
       </div>
-    </>
+    </div>
   );
 }

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Content = () => {
   return (
-    <div className="row m-0 border-2">
-      <div className="col-6 pe-5">
+    <div className="row row-cols-1 row-cols-md-2 m-0 border-2">
+      <div className="col pe-4">
         <h6 className="text-primary ">QUESTION INSTRUCTION</h6>
         <p style={{ textAlign: "justify" }}>
           Passage You Want to hit a small box on the floor with a marble fired
@@ -15,33 +15,32 @@ const Content = () => {
           friction)?
         </p>
       </div>
-      <div className="col-6 pe-5 ">
-        <h6 className="text-primary">QUESTION</h6>
+      <div className="col pe-4 "><h6 className="text-primary">QUESTION</h6>
         <p style={{ textAlign: "justify" }} className="mb-0">
           A block of mass m is projected with velocity V<sub>0</sub> as shown in
           the fig. The distance between free ends is ℓ<sub>0</sub>. Maximum
           displacement of the block during the motion.
         </p>
-        <Image src="/circuit.png" width={300} height={120}></Image>
+        <Image src="/circuit.png" width={250} height={100}></Image>
         <br></br>
         <br></br>
 
         <div>
           <input type="radio" />
           <label>(A).</label>
-          <Image src="/eq1.png" width={115} height={50}></Image>
+          <Image src="/eq1.png" width={110} height={50}></Image>
           <br />
           <input defaultChecked type="radio" />
           <label>(B).</label> <span>  </span>
-          <Image src="/eq2.png" width={115} height={55}></Image>
+          <Image src="/eq2.png" width={110} height={55}></Image>
           <br />
           <input type="radio" />
           <label>(C). &nbsp;&nbsp;</label> 
-          <Image src="/eq3.png" width={115} height={58}></Image>
+          <Image src="/eq3.png" width={110} height={58}></Image>
           <br />
           <input type="radio" />
           <label>(D).</label><span>  </span>
-          <Image src="/eq4.png" width={115} height={60}></Image>
+          <Image src="/eq4.png" width={110} height={60}></Image>
         </div>
       </div>
     </div>
